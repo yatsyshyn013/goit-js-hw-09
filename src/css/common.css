@@ -16,3 +16,20 @@ img {
   display: block;
   max-width: 100%;
 }
+
+
+button {
+  padding: 15px 20px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+button:hover, :focus {
+  background-color: #C5C5C5;
+  
+}
