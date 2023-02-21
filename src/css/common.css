@@ -18,7 +18,7 @@ img {
 }
 
 
-button {
+.button {
   padding: 15px 20px;
   margin-right: 10px;
   text-align: center;
@@ -29,7 +29,30 @@ button {
   border: 1px solid black;
 }
 
-button:hover, :focus {
+.button:hover,
+.button:focus {
   background-color: #C5C5C5;
   
+}
+
+.timer {
+  display: flex;
+  margin-top: 10px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 12px;
+  text-transform: uppercase;
+}
+
+.value{
+  font-size: 35px;
+}
+
+.label{
+  font-size: 12px;
+  font-weight: 500;
 }
