@@ -20,6 +20,11 @@ function onFormElSubmit(evt) {
   let step = Number(refs.stepEL.value);
   let amount = Number(refs.amountEL.value);
 
+  if (delay < 0 || step < 0 || amount <= 0) {
+    Notiflix.Notify.failure('Date must be positive');
+    return;
+  }
+
   for (let i = 1; i <= amount; i++) {
     createPromise(i, delay)
      .then(({ position, delay }) => {
